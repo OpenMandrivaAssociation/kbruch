@@ -1,11 +1,11 @@
-Name:		kbruch
 Summary:	Practice calculating with fractions
-Version:	4.13.3
-Release:	1
+Name:		kbruch
+Version:	4.14.3
+Release:	2
+License:	GPLv2+
 Group:		Graphical desktop/KDE
-License:	GPLv2 GFDL
-URL:		http://edu.kde.org/kbruch
-Source:		ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{name}-%{version}.tar.xz
+Url:		http://edu.kde.org/kbruch
+Source0:	ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	kdelibs4-devel
 
 %description
@@ -18,6 +18,7 @@ KBruch is a small program to practice calculating with fractions.
 %{_kde_applicationsdir}/kbruch.desktop
 %{_kde_appsdir}/kbruch
 %{_kde_iconsdir}/*/*/apps/kbruch.*
+%{_kde_datadir}/appdata/kbruch.appdata.xml
 %{_kde_datadir}/config.kcfg/kbruch.kcfg
 %{_kde_mandir}/man1/kbruch.1.*
 
@@ -34,6 +35,16 @@ KBruch is a small program to practice calculating with fractions.
 %makeinstall_std -C build
 
 %changelog
+* Tue Nov 11 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 4.14.3-1
+- New version 4.14.3
+
+* Wed Oct 15 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 4.14.2-1
+- New version 4.14.2
+
+* Mon Sep 29 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 4.14.1-1
+- New version 4.14.1
+- Update files
+
 * Tue Jul 15 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 4.13.3-1
 - New version 4.13.3
 
