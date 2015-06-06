@@ -7,6 +7,13 @@ Group:		Graphical desktop/KDE
 Url:		http://edu.kde.org/kbruch
 Source0:	http://download.kde.org/stable/applications/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	cmake(ECM)
+BuildRequires:	cmake(KF5Config)
+BuildRequires:	cmake(KF5Crash)
+BuildRequires:	cmake(KF5DocTools)
+BuildRequires:	cmake(KF5I18n)
+BuildRequires:	cmake(KF5WidgetsAddons)
+BuildRequires:	cmake(KF5XmlGui)
+
 
 %description
 KBruch is a small program to practice calculating with fractions.
