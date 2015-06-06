@@ -14,7 +14,6 @@ BuildRequires:	cmake(KF5I18n)
 BuildRequires:	cmake(KF5WidgetsAddons)
 BuildRequires:	cmake(KF5XmlGui)
 
-
 %description
 KBruch is a small program to practice calculating with fractions.
 
@@ -39,5 +38,5 @@ KBruch is a small program to practice calculating with fractions.
 %ninja -C build
 
 %install
-%ninja_install_std -C build
+%ninja_install -C build
 
