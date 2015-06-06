@@ -19,14 +19,17 @@ KBruch is a small program to practice calculating with fractions.
 
 %files
 %doc README NEWS VERSION AUTHORS ChangeLog TODO COPYING COPYING.DOC
-%doc %{_kde_docdir}/HTML/en/kbruch
-%{_kde_bindir}/kbruch
-%{_kde_applicationsdir}/kbruch.desktop
-%{_kde_appsdir}/kbruch
-%{_kde_iconsdir}/*/*/apps/kbruch.*
-%{_kde_datadir}/appdata/kbruch.appdata.xml
-%{_kde_datadir}/config.kcfg/kbruch.kcfg
-%{_kde_mandir}/man1/kbruch.1.*
+%doc %{_docdir}/HTML/en/kbruch
+%{_bindir}/kbruch
+%{_datadir}/appdata/org.kde.kbruch.appdata.xml
+%{_datadir}/applications/kbruch/org.kde.kbruch.desktop
+%{_datadir}/config.kcfg/kbruch/kbruch.kcfg
+%{_iconsdir}/hicolor/*/apps/kbruch.*[gz]
+%{_datadir}/kbruch/pics/*.png
+%{_datadir}/kxmlgui5/kbruch/AppMenuWidgetui.rc
+%{_datadir}/kxmlgui5/kbruch/FractionRingWidgetui.rc
+%{_datadir}/kxmlgui5/kbruch/kbruchui.rc
+%{_mandir}/man1/kbruch.1.* 
 
 #----------------------------------------------------------------------
 
