@@ -22,14 +22,14 @@ KBruch is a small program to practice calculating with fractions.
 %doc %{_docdir}/HTML/en/kbruch
 %{_bindir}/kbruch
 %{_datadir}/appdata/org.kde.kbruch.appdata.xml
-%{_datadir}/applications/kbruch/org.kde.kbruch.desktop
-%{_datadir}/config.kcfg/kbruch/kbruch.kcfg
+%{_datadir}/applications/org.kde.kbruch.desktop
+%{_datadir}/config.kcfg/kbruch.kcfg
 %{_iconsdir}/hicolor/*/apps/kbruch.*[gz]
 %{_datadir}/kbruch/pics/*.png
 %{_datadir}/kxmlgui5/kbruch/AppMenuWidgetui.rc
 %{_datadir}/kxmlgui5/kbruch/FractionRingWidgetui.rc
 %{_datadir}/kxmlgui5/kbruch/kbruchui.rc
-%{_mandir}/man1/kbruch.1.* 
+%{_mandir}/man1/kbruch.1.*
 
 #----------------------------------------------------------------------
 
