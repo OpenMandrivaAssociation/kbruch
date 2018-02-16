@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   kbruch-17.12.1.tar.xz: cfba83011d92f143431e109d5fb6ba4da6e05989
+sources:
+  kbruch-17.12.2.tar.xz: f10dcbc51eaa37c8ec98d2e49eeedae718e1b181
