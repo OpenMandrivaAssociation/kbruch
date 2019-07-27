@@ -1,6 +1,6 @@
 Summary:	Practice calculating with fractions
 Name:		kbruch
-Version:	19.04.3
+Version:	19.07.80
 Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
@@ -19,7 +19,7 @@ BuildRequires:	cmake(KF5XmlGui)
 KBruch is a small program to practice calculating with fractions.
 
 %files -f kbruch.lang
-%doc README NEWS VERSION AUTHORS ChangeLog TODO COPYING COPYING.DOC
+%doc README NEWS AUTHORS ChangeLog TODO COPYING COPYING.DOC
 %{_bindir}/kbruch
 %{_datadir}/metainfo/org.kde.kbruch.appdata.xml
 %{_datadir}/applications/org.kde.kbruch.desktop
