@@ -1,7 +1,7 @@
 Summary:	Practice calculating with fractions
 Name:		kbruch
-Version:	19.12.2
-Release:	2
+Version:	19.12.3
+Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Url:		http://edu.kde.org/kbruch
