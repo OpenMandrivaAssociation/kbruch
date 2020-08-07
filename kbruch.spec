@@ -1,6 +1,6 @@
 Summary:	Practice calculating with fractions
 Name:		kbruch
-Version:	20.07.90
+Version:	20.08.0
 Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
