@@ -26,15 +26,12 @@ KBruch is a small program to practice calculating with fractions.
 %{_datadir}/config.kcfg/kbruch.kcfg
 %{_iconsdir}/hicolor/*/apps/kbruch.*[gz]
 %{_datadir}/kbruch/pics/*.png
-%{_datadir}/kxmlgui6/kbruch/AppMenuWidgetui.rc
-%{_datadir}/kxmlgui6/kbruch/FractionRingWidgetui.rc
-%{_datadir}/kxmlgui6/kbruch/kbruchui.rc
 %{_mandir}/man1/kbruch.1.*
 
 #----------------------------------------------------------------------
 
 %prep
-%autosetup -p1
+%autosetup -p1 -n kbruch-%{version}
 %cmake \
 	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON \
 	-G Ninja
