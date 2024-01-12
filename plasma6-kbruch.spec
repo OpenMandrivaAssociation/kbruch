@@ -1,6 +1,6 @@
 Summary:	Practice calculating with fractions
 Name:		plasma6-kbruch
-Version:	24.01.85
+Version:	24.01.90
 Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
@@ -31,7 +31,7 @@ KBruch is a small program to practice calculating with fractions.
 #----------------------------------------------------------------------
 
 %prep
-%autosetup -p1 -n kbruch-%{version}
+%autosetup -p1 -n kbruch-%{?git:master}%{!?git:%{version}}
 %cmake \
 	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON \
 	-G Ninja
