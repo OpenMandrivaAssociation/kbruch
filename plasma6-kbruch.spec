@@ -1,12 +1,19 @@
+%define git 20240217
+%define gitbranch release/24.02
+%define gitbranchd %(echo %{gitbranch} |sed -e "s,/,-,g")
 Summary:	Practice calculating with fractions
 Name:		plasma6-kbruch
-Version:	24.01.95
-Release:	1
+Version:	24.01.96
+Release:	%{?git:0.%{git}.}1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Url:		http://edu.kde.org/kbruch
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
+%if 0%{?git:1}
+Source0:	https://invent.kde.org/education/kbruch/-/archive/%{gitbranch}/kbruch-%{gitbranchd}.tar.bz2#/kbruch-%{git}.tar.bz2
+%else
 Source0:	http://download.kde.org/%{stable}/release-service/%{version}/src/kbruch-%{version}.tar.xz
+%endif
 BuildRequires:	cmake(ECM)
 BuildRequires:	cmake(KF6Config)
 BuildRequires:	cmake(KF6Crash)
@@ -31,7 +38,7 @@ KBruch is a small program to practice calculating with fractions.
 #----------------------------------------------------------------------
 
 %prep
-%autosetup -p1 -n kbruch-%{?git:master}%{!?git:%{version}}
+%autosetup -p1 -n kbruch-%{?git:%{gitbranchd}}%{!?git:%{version}}
 %cmake \
 	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON \
 	-G Ninja
