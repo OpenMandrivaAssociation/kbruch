@@ -3,8 +3,8 @@
 %define gitbranchd %(echo %{gitbranch} |sed -e "s,/,-,g")
 Summary:	Practice calculating with fractions
 Name:		plasma6-kbruch
-Version:	24.02.0
-Release:	%{?git:0.%{git}.}2
+Version:	24.02.1
+Release:	%{?git:0.%{git}.}1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Url:		http://edu.kde.org/kbruch
