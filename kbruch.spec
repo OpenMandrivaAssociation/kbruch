@@ -2,7 +2,7 @@
 %define gitbranch release/24.02
 %define gitbranchd %(echo %{gitbranch} |sed -e "s,/,-,g")
 Summary:	Practice calculating with fractions
-Name:		plasma6-kbruch
+Name:		kbruch
 Version:	25.04.0
 Release:	%{?git:0.%{git}.}1
 License:	GPLv2+
